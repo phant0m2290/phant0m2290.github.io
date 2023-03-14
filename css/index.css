@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.projects {
+    display: flex;
+    background-color: #f0f0f0;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    height: 500px;
+    width: 100vw;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    cursor: grab;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+}
+
+.project {
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 400px;
+    height: 200px;
+}
+
+.project div {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: auto;
+    height: 250px;
+    background-color: white;
+    color: #6b6e70;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.projectTitle {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.projectLink {
+    margin-top: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #434DC4;
+    font: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+h1 {
+    margin-left: 15px;
+}

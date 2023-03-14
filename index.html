@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5QKYGWDW7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); 
+        gtag('config', 'G-Y5QKYGWDW7');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaytitulaer3820</title>
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <script src="./js/projects.js" defer></script> <!--Script to generate projects from the projects.json file and make it draggable-->
+</head>
+<body>
+    <script src="./js/system.js"></script> <!--Get client data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script> <!--Import handlebars-->
+
+    <script id="project-template" type="text/x-handlebars-template"> <!--Project template-->
+        <div class="project">
+            <img src="{{image}}"/>
+            <div>
+                <h5 class="projectTitle">{{name}}</h5>
+                {{description}}
+                <a href="{{url}}" target="_blank" class="projectLink">See more</a>
+            </div>
+        </div>
+    </script>
+
+    <!---->
+    <h1>Welcome! Currently this is just a galery of my projects but soon there will be more</h1>
+
+    <div id="projects" class="projects"></div>
+</body>
+</html>
