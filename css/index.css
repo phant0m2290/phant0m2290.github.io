@@ -1,17 +1,45 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #1A1B1E;
+    color: #A6A7AB;
+}
+
+.button {
+    margin: 10px;
+    background-color: #1098AD;
+    color: #C5F6FA;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 18px 50px 18px 50px;
+    border: 0;
+    border-bottom: 6px solid #0B7285;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.button:hover {
+    position: relative;
+    top: 3px;
+    border-bottom-width: 3px;
+}
+
+.title {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects {
+    padding: 3vw;
+    clip-path: polygon(0% calc(0% + 3vw), 0% calc(100% - 3vw), 100% 100%, 100% 0);
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #25262B;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
     height: 500px;
-    width: 100vw;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
@@ -19,6 +47,7 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none;
+    margin-bottom: 50px;
 }
 
 .projects::-webkit-scrollbar {
@@ -45,8 +74,8 @@ body {
     border-bottom-right-radius: 1rem;
     width: auto;
     height: 250px;
-    background-color: white;
-    color: #6b6e70;
+    background-color: #2C2E33;
+    color: #A6A7AB;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -60,14 +89,22 @@ body {
 
 .projectLink {
     margin-top: 25px;
-    font-weight: bold;
+    background-color: #1098AD;
+    color: #C5F6FA;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 25px 10px 25px;
+    border: 0;
+    border-bottom: 6px solid #0B7285;
     text-decoration: none;
-    color: #434DC4;
-    font: 16px;
     width: fit-content;
     height: fit-content;
+    border-radius: 1rem;
 }
 
-h1 {
-    margin-left: 15px;
+.projectLink:hover {
+    position: relative;
+    top: 3px;
+    border-bottom-width: 3px;
 }
